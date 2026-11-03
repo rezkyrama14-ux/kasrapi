@@ -1,0 +1,78 @@
+KASRAPI – APLIKASI LAPORAN KEUANGAN UMKM
+==========================================
+
+Isi folder
+- index.html            : aplikasinya (satu file)
+- manifest.webmanifest  : identitas aplikasi (nama, ikon, warna)
+- sw.js                 : agar aplikasi tetap bisa dibuka tanpa internet
+- icons/                : ikon aplikasi
+
+Semua file harus tetap berada dalam satu folder seperti ini.
+
+
+CARA 1 (DISARANKAN): PASANG SEBAGAI APLIKASI DI HP DAN LAPTOP
+---------------------------------------------------------------
+Aplikasi perlu "rumah" di internet sekali saja, setelah itu bisa dipasang
+di perangkat mana pun dan tetap jalan tanpa internet. Contoh gratis memakai
+GitHub Pages:
+
+1. Buat akun di github.com, lalu buat repository baru, misalnya "kasrapi".
+   Pilih Public.
+2. Di repository itu pilih "Add file" > "Upload files", lalu tarik SEMUA
+   isi folder ini (index.html, manifest.webmanifest, sw.js, folder icons).
+   Klik "Commit changes".
+3. Buka Settings > Pages. Pada "Build and deployment", pilih
+   "Deploy from a branch", branch "main", folder "/ (root)", lalu Save.
+4. Tunggu 1-2 menit. Alamat aplikasi menjadi:
+   https://NAMA-AKUN-ANDA.github.io/kasrapi/
+5. Pasang di perangkat:
+   - Android (Chrome)  : buka alamat itu > menu titik tiga >
+                         "Instal aplikasi" / "Tambahkan ke layar utama".
+   - iPhone/iPad       : buka di Safari > tombol Bagikan >
+                         "Tambahkan ke Layar Utama".
+   - Laptop Windows/Mac: buka di Chrome atau Edge > ikon pasang di kolom
+                         alamat, atau menu > "Instal KasRapi".
+
+Setelah terpasang, KasRapi punya ikon sendiri, terbuka tanpa bilah browser,
+dan bisa dipakai tanpa internet.
+
+Pembaruan: bila nanti ada versi baru, cukup unggah ulang index.html ke
+repository yang sama. Perangkat mengambil versi baru saat online.
+
+
+CARA 2: BUKA LANGSUNG TANPA HOSTING
+-----------------------------------
+Klik dua kali index.html. Aplikasi jalan di browser dan data tersimpan di
+perangkat itu, tetapi tidak bisa "dipasang" sebagai aplikasi.
+
+
+CARA 3: MASUK GOOGLE PLAY STORE (OPSIONAL)
+------------------------------------------
+Setelah Cara 1 selesai, buka pwabuilder.com, masukkan alamat aplikasi, lalu
+pilih paket Android. Situs itu membuat file paket Play Store dari alamat
+tersebut. Untuk menerbitkan di Play Store dibutuhkan akun Google Play
+Console (ada biaya pendaftaran sekali bayar) dan proses peninjauan Google.
+
+
+PENTING SOAL DATA
+-----------------
+- Data tersimpan di browser perangkat masing-masing, tidak dikirim ke
+  server mana pun. Data di HP dan di laptop terpisah.
+- Unduh cadangan secara berkala: Pengaturan > Unduh cadangan.
+- Memindahkan data (antar-perangkat, atau dari versi KasRapi di Claude):
+  Unduh cadangan di perangkat lama, lalu Pengaturan > Pulihkan dari
+  cadangan di perangkat baru.
+- Menghapus data browser atau mencopot aplikasi bisa ikut menghapus data.
+  Selalu unduh cadangan dulu.
+
+
+ANALISIS AI
+-----------
+Pilih salah satu:
+a) Tanpa biaya tambahan: menu Analisis > "Salin ringkasan untuk Claude",
+   lalu tempel ke percakapan baru di claude.ai.
+b) Langsung di aplikasi: isi kunci API Anthropic di Pengaturan > Aplikasi
+   di perangkat ini. Kunci didapat dari console.anthropic.com, hanya
+   tersimpan di perangkat itu, dan biaya pemakaian ditagih ke akun API
+   pemilik kunci. Jangan mengisi kunci di perangkat yang dipakai bersama,
+   dan jangan menyebarkan aplikasi yang sudah berisi kunci Anda.
